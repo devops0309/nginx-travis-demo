@@ -3,6 +3,6 @@ sudo: required
 
 services:
   - docker
-deploy:
-  provider: script
-  script: bash script.sh
+
+script:
+- bash script.sh
