@@ -6,4 +6,4 @@ services:
   - docker
 
 script:
-- docker build -t shivamdocker/travis-nginx:v1
+- docker build -t shivamdocker/travis-nginx:v1 .
