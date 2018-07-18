@@ -6,3 +6,8 @@ services:
 
 script:
 - bash script.sh
+
+notifications:
+  email:
+    - uttamkl1234567@gmail.com
+    
