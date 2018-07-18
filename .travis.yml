@@ -1,8 +1,6 @@
 sudo: required
-
-
-services:
-  - docker
-
-script:
-- docker build -t shivamdocker/travis-nginx:v1 .
+  
+notifications:
+  email:
+    - uttamkl1234567@gmail.com
+    
