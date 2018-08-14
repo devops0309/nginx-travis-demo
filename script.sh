@@ -1,10 +1,9 @@
 #!/bin/bash
 #git clone https://$GIT_USERNAME:$GIT_PASSWORD@github.com/devops0309/nginx-travis-demo.git
-echo "doing step 1"
-echo -ne '\n' | sudo add-apt-repository ppa:ethereum/ethereum
-echo "doing step 2"
-sleep 900;
-sudo apt-get -y update
-echo "doing step 3"
-sudo apt-get -y install solc
-which solc
+tail -f /dev/null >/tmp/apt-get.log & # Run in background, with output redirected
+pid=$! # Get PID of background command
+while kill -0 $pid  # Signal 0 just tests whether the process exists
+do
+  echo -n "executing"
+  sleep 5;
+done
